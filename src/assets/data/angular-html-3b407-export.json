@@ -1,0 +1,21 @@
+{
+  "equipo" : [ {
+    "frase" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "nombre" : "JF Stark",
+    "subtitulo" : "Lord Protector",
+    "twitter" : "@jf_agudelo",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/angular-html-3b407.appspot.com/o/team-3.jpg?alt=media&token=40944993-67c5-4fc4-b4a8-924302145d48"
+  }, {
+    "frase" : "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+    "nombre" : "Laura Targaryen",
+    "subtitulo" : "Emperatriz del Oceáno",
+    "twitter" : "@laura_andrea",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/angular-html-3b407.appspot.com/o/team-2.jpg?alt=media&token=dd6feb2a-ae31-4256-982a-b28403f63687"
+  }, {
+    "frase" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "nombre" : "Narciso",
+    "subtitulo" : "Esclavo",
+    "twitter" : "@el_esclavo",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/angular-html-3b407.appspot.com/o/team-1.jpg?alt=media&token=b9d66314-3ec5-43b9-895b-bf53804dd19b"
+  } ]
+}
