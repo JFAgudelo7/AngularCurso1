@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Producto } from '../interfaces/producto.interface';
+import { resolve } from '../../../node_modules/@types/q';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,7 @@ export class ProductosService {
     return new Promise( (resolve, reject) => {
       this.http.get('https://angular-html-3b407.firebaseio.com/productos_idx.json')
       .subscribe( (resp: Producto[]) =>{   
-        console.log(resp);     
+        //console.log(resp);     
         this.productos = resp;
         /*setTimeout(() => {
           this.cargando = false;
@@ -52,26 +53,20 @@ export class ProductosService {
     else{
       //aplicar filtro
        this.filtrarProductos(termino);
-    }
-
-    this.productosFiltrado = this.productos.filter( producto =>{
-      return true;
-    });
-
-   
+    }   
   }
 
   private filtrarProductos( termino: string ){
 
+    this.productosFiltrado = [];
     termino = termino.toLocaleLowerCase();
 
-    console.log(this.productos);
-    this.productosFiltrado = [];
+    //console.log(this.productos);
     this.productos.forEach( prod => {
 
       const tituloLower = prod.titulo.toLocaleLowerCase();
 
-      if( prod.categoria.indexOf(termino) >= 0 || prod.titulo.indexOf(termino) >= 0){
+      if( prod.categoria.indexOf(termino) >= 0 || tituloLower.indexOf(termino) >= 0){
         this.productosFiltrado.push( prod );
       }
     })
